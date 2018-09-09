@@ -2,30 +2,50 @@
 <html>
 <head>
 	<title>details</title>
-	<link rel="stylesheet" type="text/css" href="page3.css">
+	<link rel="stylesheet" type="text/css" href="page2.css">
+
 </head>
 <body>
-	first name: <label id="first"></label>
-	<br><br>
-	last name: <label id="last"></label>
-	<br><br>
-	age: <label id="age"></label>
-	<br><br>
-	gender: <label id="gender"></label>
-	<br><br>
-	email: <label id="mail"></label>
-	<br><br>
-	DOB: <label id="bday"></label>
-	<br><br>
+        <div class="container"> 
+        <div class="row">
+        <div class="col-md">
 
+	First name: <label id="first"></label>
+       <br><br>
+
+	Last name: <label id="last"></label>
+	<br><br>
+	Age: <label id="age"></label>
+        <br><br>	
+	
+	Gender: <label id="gender"></label>
+	<br><br>
+	Email: <label id="mail"></label>
+	<br><br>
+         Age: <label id="bday"></label>
+	<br><br>
+	<!--message: <label id="msg"></label>
+	<br><br>
+	No Of Items Donated: <label id="no"></label>
+	<br><br>
+	Items Donated: <label id="items"></label>
+	<br><br>
+	<h3>Signed Up Successfully.</h3>
+	<!--To make changes <a href="#" onclick="history.back();return false">Go Back</a>-->
 	Phno: <label id="phno"></label>
     <br><br>
-	coach: <label id="coach"></label>
+	Item Donated: <label id="coach"></label>
     <br><br>
-	birth: <label id="birth"></label>
+	Message: <label id="birth"></label>
 	<h3>Form Submitted Successfully.</h3>
-	<h4>wait for confirmation.</h4>
-
+	</div>
+       
+        <div class="col-md">
+        <img src="thanks.jpg" width="250px" height="250px">
+     
+        </div>
+        </div>
+        
 
 
 
@@ -80,75 +100,30 @@
 			var coach=unescape(temp[1]);
 
 			temp=parameters[8].split("=");
+                        temp[1]=temp[1].split("+");
+                        temp[1]=temp[1].join(" ");
 			var birth=unescape(temp[1]);
+                          
 
 			document.getElementById("first").innerHTML=first;
 			document.getElementById("last").innerHTML=last;
-			document.getElementById("age").innerHTML=age;
-			document.getElementById("gender").innerHTML=gender;
-			document.getElementById("mail").innerHTML=mail;
+			document.getElementById("age").innerHTML=bday;
+			document.getElementById("gender").innerHTML=mail;
+			document.getElementById("mail").innerHTML=age;
 			document.getElementById("bday").innerHTML=bday;
 			/*document.getElementById("msg").innerHTML=msg;
 			document.getElementById("no").innerHTML=number;
 			document.getElementById("items").innerHTML=items;*/
-			document.getElementById("phno").innerHTML=phno;
+			document.getElementById("phno").innerHTML=gender;
 			document.getElementById("coach").innerHTML=coach;
 			document.getElementById("birth").innerHTML=birth;
 
 
 	</script>
 
-<!--<h1><u>Your Details</u></h1>
-	First Name:<h2 id="show1">a</h2>
-	<script>
-		var first=document.forms["my_form"]["first"].value;
-		document.getElementById('show1').innerHTML=first;
-	</script>
-	<br>
-	Last Name:<h2 id="show2">b</h2>
-	<script>
-		var last=document.forms["my_form"]["last"].value;
-		document.getElementById('show2').innerHTML=last;
-	</script>
-	<br>
-	gender:<h2 id="show3">c</h2>
-	<script>
-		var gender=document.forms["my_form"]["gender"].value;
-		document.getElementById('show3').innerHTML=gender;
-	</script>
-	<br>
-	age:<h2 id="show4">d</h2>
-	<script>
-		var age=document.forms["my_form"]["age"].value;
-		document.getElementById('show4').innerHTML=age;
-	</script>
-	<br>
-	birthday:<h2 id="show5">d</h2>
-	<script>
-		var bday=document.forms["my_form"]["bday"].value;
-		document.getElementById('show5').innerHTML=bday;
-	</script>
-	<br>
-	email-id:<h2 id="show6">e</h2>
-	<script>
-		var email=document.forms["my_form"]["email"].value;
-		document.getElementById('show6').innerHTML=email;
-	</script>
-	<br>
-	message:<h2 id="show7">f</h2>
-	<script>
-		var msg=document.forms["my_form"]["message"].value;
-		document.getElementById('show7').innerHTML=msg;
-	</script>
-	<br>
-	<h1>.........THANK YOU.......</h1>
-	<!---<script>
-			document.getElementById("show1").innerHTML=first;
-			document.getElementById("show2").innerHTML=last;
-			document.getElementById("show3").innerHTML=gender;
-			document.getElementById("show4").innerHTML=age;
-			document.getElementById("show5").innerHTML=bday;
-			document.getElementById("show6").innerHTML=message;
-	</script>-->
+<footer style="background-color:green;">
+  <marquee style="color:white;">&copy copyright by abhijeetsaraf </marquee></footer>
 </body>
 </html>
+
+
